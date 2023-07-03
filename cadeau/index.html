@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="icon" type="images/logo" href="logo.png">
+    <title>Cadeau</title>
+     
+</head>
+<body>
+  
+  <audio id="background-music" autoplay loop>
+    <source src="001.mp3" type="audio/mpeg">
+  </audio>
+  
+ 
+  <!-- <a href="dessin.png"><img src="dessin.png" alt=""></a> -->
+  <div class="centered-image">
+    <img src="dessin.png" id="clickableImage" alt="Image-cliquable">
+</div>
+    <div id="loginBox">
+        <h2>Authentification</h2>
+        <label for="username">Pseudo:</label>
+        <input type="text" id="username" required><br>
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" required><br>
+        <button id="loginButton">Continuer</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="js.js"></script> 
+<script>
+ document.addEventListener("DOMContentLoaded", function() {
+  var audio = document.getElementById("background-music");
+  audio.play();
+});
+
+  </script>
+  
+  
+</body>
+</html>
