@@ -1,78 +1,30 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <style>
-    /* CSS pour l'effet de vibration */
-    .vibrate {
-      animation: vibrateAnimation 0.1s infinite;
-      transform-origin: center;
+    <title>Qlique sur le Gateaux </title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #clickableImage {
+    cursor: pointer;
+}
+.centered-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ajustez la hauteur selon vos besoins */
     }
-
-    @keyframes vibrateAnimation {
-      0% { transform: rotate(-2deg); }
-      50% { transform: rotate(2deg); }
-      100% { transform: rotate(-2deg); }
-    }
-  </style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="images/png" href="logo.png">
-    <title>Surprise</title>
-    <link rel="stylesheet" href="style.css">
+    </style>
+   
 </head>
-
+<link rel="icon" type="images/logo" href="logo.png">
 <body>
+    <div class="centered-image">
+    <img src="logo.png" id="clickableImage" alt="Image-cliquable">
+</div>
    
-  <audio id="music" autoplay loop>
-    <source src="001.mp3" type="audio/mpeg">
-  </audio>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-     var audio = document.getElementById("music");
-     audio.play();
-   });
    
-     </script>
-  
-         
-
-
-     <h1>Joyeux  Anniversair LINA</h1>
-     <img src="24.png" alt="">
-     <h2 class="big-title"><span class="texte"></span> <br>Je te souhaite un joyeux anniversaire rempli de bonheur, de santé et de réussite dans ta vie. Je te souhaite également une longue vie, mon bijou. Que Dieu te préserve pour moi. Je t'aime très fort, ma chérie.</h2>
-     <div class="c"><a href="cadeau/index.html"><img id="myButton" src="cadeau.png" alt="cadeaux"></a></div>
-     <canvas id="Canvas"></canvas>  
-     <script>
-      // JavaScript pour ajouter la classe 'vibrate' à l'image toutes les 5 secondes
-      const image = document.getElementById('myButton');
-  
-      function vibrateImage() {
-        image.classList.add('vibrate');
-        setTimeout(() => {
-          image.classList.remove('vibrate');
-        }, 1000);
-      }
-  
-      setInterval(vibrateImage, 4000);
-    </script>
-    
-   
-    <script src="app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        var typed = new Typed(".texte", {
-            strings: ["Mon Amour", "Mon Bijout","Mon Coeur"],
-            typeSpeed: 80,
-            backSpeed: 60,
-            loop: true
-        });
-      });
-      </script>
-    
+    <script src="js.js"></script> 
 </body>
-
 </html>
