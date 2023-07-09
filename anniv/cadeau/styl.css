@@ -18,6 +18,14 @@ img{
 #loginBox input {
     margin-bottom: 10px;
 }
+.buttoncont{
+  width: 100%;
+  text-align: right;
+}
+#CloseButton{
+  
+}
+
 #clickableImage {
 cursor: pointer;
 }

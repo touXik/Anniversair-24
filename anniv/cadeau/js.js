@@ -7,6 +7,15 @@ document.getElementById("clickableImage").addEventListener("click", function() {
     }
 });
 
+document.getElementById("CloseButton").addEventListener("click", function() {
+    var loginBox = document.getElementById("loginBox");
+    if (loginBox.style.display === "none") {
+        loginBox.style.display = "block";
+    } else {
+        loginBox.style.display = "none";
+    }
+});
+
 
 
 document.getElementById("loginButton").addEventListener("click", function() {
